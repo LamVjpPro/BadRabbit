@@ -357,15 +357,20 @@ i.arrow {
   height: 100%;
 }
 
-.product-loop-image {
+.product-loop .product-loop-image a {
+  display: block;
   position: relative;
-  bottom: 3rem;
+  width: 100%;
+  padding-top: 100%;
 }
 
-.product-loop {
+.product-loop-image {
   position: relative;
-  padding-bottom: 100%;
 }
+
+/* .product-loop {
+  position: relative;
+} */
 
 .product-loop .product-click-options a:hover {
   color: #fff;
@@ -387,7 +392,7 @@ svg {
 
 .slick-prev.slick-arrow {
   position: relative;
-  top: 52rem;
+  top: 44rem;
   left: 1%;
   border: none;
   background: transparent;
@@ -435,8 +440,16 @@ svg {
 
 .product-loop-detail {
   text-align: center;
-  position: relative;
-  top: 37rem;
+  margin-top: 15px;
+}
+
+.product-loop-detail h3.font-weight-bold {
+  margin: 0;
+  font-size: 14px;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 }
 
 .product-loop-price {
@@ -469,7 +482,6 @@ svg {
 .product-loop .product-click-options {
   border: 2px solid #edb6ab;
   background: #fff;
-  color: #616087;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
@@ -717,14 +729,14 @@ svg {
     margin: 0;
   }
 
-  .product-loop-detail {
-    position: absolute;
-  }
-
   .footer-menu {
     display: none;
   }
 
-  .swiper-container {
+  .slick-prev.slick-arrow {
+    top: 254px;
+  }
+  .slick-next.slick-arrow {
+    top: 4rem;
   }
 }
