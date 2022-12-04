@@ -7,17 +7,17 @@
     <title>Rabbit</title>
     <link rel="stylesheet" href="./CSS/style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-
+    
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link
@@ -28,9 +28,11 @@
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  </head>
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script defer src="./JS/index.js" ></script>
+      
+    </head>
   <body>
     <!-- header-top-bar -->
     <div class="header-main">
@@ -50,6 +52,9 @@
       <div class="header-main-right">
         <nav class="header-top-nav">
           <ul>
+            <li class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </li>
             <li>
               <a href="">
                 <img
@@ -86,7 +91,6 @@
         </nav>
       </div>
     </div>
-  </div>
     <div class="header-banner">
       <div class="header-sidebar-left">
         <ul class="sidebar-menu">
@@ -140,6 +144,7 @@
         />
       </div>
     </div>
+  </div>
     <div class="header-bot-bar">
       <nav class="header-bot-nav">
         <ul class="header-list-lv1">
@@ -227,7 +232,7 @@
               <div class="col-md-6">
                 <div class="banner">
                   <a class="aspect-ratio" href="">
-                    <img src="https://file.hstatic.net/200000377411/file/2_1__bdf64f777bb74c13ba260a4785a9d28a.png" alt="">
+                    <img src="https://file.hstatic.net/200000377411/file/1_1__a911b27cfb1b4e6faddebf4d9a61eca2.png" alt="">
                     <div class="image-cap">
                       <p>TOPS</p>
                     </div>
@@ -237,7 +242,7 @@
               <div class="col-md-6">
                 <div class="banner">
                   <a class="aspect-ratio" href="">
-                    <img src="https://file.hstatic.net/200000377411/file/2_1__bdf64f777bb74c13ba260a4785a9d28a.png" alt="">
+                    <img src="https://file.hstatic.net/200000377411/file/4_1__2fd3a6844f2442a78322965473af2b04.png" alt="">
                     <div class="image-cap">
                       <p>OUTERWEAR</p>
                     </div>
@@ -247,7 +252,7 @@
               <div class="col-md-6">
                 <div class="banner">
                   <a class="aspect-ratio" href="">
-                    <img src="https://file.hstatic.net/200000377411/file/2_1__bdf64f777bb74c13ba260a4785a9d28a.png" alt="">
+                    <img src="https://file.hstatic.net/200000377411/file/3_1__0b38c05475a64072ac2a4eea36bcc865.png" alt="">
                     <div class="image-cap">
                       <p>HOODIE</p>
                     </div>
@@ -1080,14 +1085,6 @@
     </div>
   </body>
   <script>
-$(".swiper-wrapper").slick({
-        arrows: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow:
-          '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg" id="_20" data-name="20"><path d="m12 19a1 1 0 0 1 -.71-.29l-6-6a1 1 0 0 1 0-1.41l6-6a1 1 0 0 1 1.41 1.41l-5.29 5.29 5.29 5.29a1 1 0 0 1 -.7 1.71z" fill="#616087" data-original="#000000"></path><path d="m18 19a1 1 0 0 1 -.71-.29l-6-6a1 1 0 0 1 0-1.41l6-6a1 1 0 0 1 1.41 1.41l-5.29 5.29 5.29 5.29a1 1 0 0 1 -.7 1.71z" fill="#616087" data-original="#000000"></path></g></g></svg></button>',
-        nextArrow:
-          '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g xmlns="http://www.w3.org/2000/svg" id="_19" data-name="19"><path d="m12 19a1 1 0 0 1 -.71-1.71l5.3-5.29-5.3-5.29a1 1 0 0 1 1.41-1.41l6 6a1 1 0 0 1 0 1.41l-6 6a1 1 0 0 1 -.7.29z" fill="#616087" data-original="#000000" class=""></path><path d="m6 19a1 1 0 0 1 -.71-1.71l5.3-5.29-5.3-5.29a1 1 0 0 1 1.42-1.42l6 6a1 1 0 0 1 0 1.41l-6 6a1 1 0 0 1 -.71.3z" fill="#616087" data-original="#000000" class=""></path></g></g></svg></button>',
-      });
+
   </script>
 </html>
