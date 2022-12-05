@@ -539,8 +539,9 @@ svg {
   line-height: 35px;
   font-size: 12px;
   font-weight: 700;
-  background: url(https://file.hstatic.net/200000377411/file/voucher_16c6b58dc17e46e097ed22434db2a324.png);
-  background-size: 47%;
+  background: url(https://file.hstatic.net/200000377411/file/voucher_16c6b58dc17e46e097ed22434db2a324.png)
+    center/cover;
+  background-size: 125%;
 }
 
 /* footer-main */
