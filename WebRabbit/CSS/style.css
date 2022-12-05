@@ -15,6 +15,15 @@ a:hover {
   cursor: pointer;
 }
 
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 h2 {
   margin-top: 10px !important;
 }
@@ -133,9 +142,9 @@ li {
   color: #fbf7f0;
 }
 
-.sidebar-menu:hover {
+/* .sidebar-menu:hover {
   background-color: #5c5c5c;
-}
+} */
 
 .sidebar-menu li {
   padding: 8px 8px 0 8px;
@@ -314,8 +323,6 @@ i.arrow {
   text-decoration: none;
 }
 
-/* Product */
-
 .product-loop-image > a:not(.no-hover):hover > picture:last-child {
   display: none;
 }
@@ -368,9 +375,9 @@ i.arrow {
   position: relative;
 }
 
-/* .product-loop {
-  position: relative;
-} */
+.product-loop {
+  margin-bottom: 50px;
+}
 
 .product-loop .product-click-options a:hover {
   color: #fff;
@@ -491,6 +498,49 @@ svg {
   top: 0;
   overflow: hidden;
   text-align: center;
+}
+
+.layout-collection .sidebar-collection .sidebar-menu {
+  position: sticky;
+  top: 114px;
+  margin-bottom: 30px;
+}
+
+.layout-collection .sidebar-collection .sidebar-menu > li {
+  margin-bottom: 10px;
+}
+
+.layout-collection {
+  padding-top: 30px;
+}
+
+.layout-collection .sidebar-collection .sidebar-menu > li > a {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sidebar-collection {
+  flex: 0 0 15%;
+  max-width: 15%;
+  background: #fbf7f0;
+}
+
+.content-collection {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.product-loop-detail .sale-label {
+  position: absolute;
+  top: 240px;
+  right: 15px;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  font-weight: 700;
+  background: url(https://file.hstatic.net/200000377411/file/voucher_16c6b58dc17e46e097ed22434db2a324.png);
+  background-size: 47%;
 }
 
 /* footer-main */
