@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.breadcrumb {
+  background-color: transparent !important;
+}
 .footer-powered-by {
   text-align: center;
   color: #4b5563;
@@ -34,7 +36,8 @@ a {
   display: inline-block;
   border-radius: 4px;
   font-weight: 500;
-  padding: 1.4em 1.7em;
+  border: none !important;
+  padding: 1.4em 1.7em !important;
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
@@ -92,9 +95,17 @@ h2 {
   padding-bottom: 0.38em;
 }
 
+@media (min-width: 1000px) {
+  .wrap {
+    width: 90%;
+    max-width: 78.57143em;
+  }
+}
+
 .wrap {
   display: flex;
   flex-direction: row-reverse;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -221,6 +232,8 @@ h2 {
 }
 
 .section .section-content {
+  display: flex;
+  flex-direction: column;
   zoom: 1;
   margin-bottom: 2em;
 }
@@ -261,14 +274,37 @@ h2 {
 .fieldset .field .field-input-wrapper .field-input {
   box-shadow: 0 0 0 1px #d9d9d9;
   transition: all 0.2s ease-out;
+  border: none;
   background-color: white;
   color: #333333;
   border-radius: 4px;
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 0.94em 2.8em 0.94em 0.8em;
+  padding: 0.94em 2.8em 0.94em 0.5em;
   word-break: normal;
+}
+
+.field-input-wrapper-select select {
+  appearance: none;
+}
+
+.field-input-wrapper.field-input-wrapper-select {
+  position: relative;
+}
+
+.fieldset .field .field-input-wrapper.field-input-wrapper-select::before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIxOSIgdmlld0JveD0iMCAwIDIxIDE5Ij48dGl0bGU+QXJ0Ym9hcmQgMTwvdGl0bGU+PGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBmaWxsPSIjMDAwIj48Zz48cGF0aCBkPSJNMCAwaDF2MTlIMFYweiIgaWQ9IlNoYXBlIiBmaWxsLW9wYWNpdHk9Ii4xNSIvPjxwYXRoIGQ9Ik0xMSA4aDEwbC01IDUtNS01eiIgZmlsbC1vcGFjaXR5PSIuNSIvPjwvZz48L2c+PC9nPjwvc3ZnPg==),
+    none;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 @media (min-width: 1000px) {
