@@ -44,4 +44,16 @@ $(document).ready(function ($) {
   $(".back-to-top").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
   });
+  $('.menu-icon i').click(function () {
+    $('.wrapper-menu-mb').addClass('active_mb');
+    $('.site-overlay').addClass('active');
+  });
+  $('.close-menu-mb').click(function () {
+    $('.wrapper-menu-mb').removeClass('active_mb');
+    $('.site-overlay').removeClass('active');
+  })
+  $('.site-overlay').click(function () {
+    $('.wrapper-menu-mb').removeClass('active_mb');
+    $(this).removeClass('active');
+  })
 });
