@@ -6,6 +6,16 @@ img {
 .p-0 {
   padding: 0 !important;
 }
+
+.py-5 {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
 .product-image-sliders {
   display: flex;
   justify-content: space-between;
