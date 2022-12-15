@@ -211,7 +211,7 @@ button:focus {
 @media (max-width: 991px) {
   .product-image-sliders .product-info {
     width: 100%;
-    margin-top: 48px;
+    margin-top: 30px;
   }
 
   .product-image-sliders {
@@ -224,5 +224,40 @@ button:focus {
 
   .product-image-sliders .slider-left {
     width: 100%;
+    padding: 0;
+  }
+  .slick-dots {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+  }
+
+  .slick-active button {
+    background: #616087 !important;
+    opacity: 1 !important;
+  }
+
+  .slick-dots li button {
+    border-radius: 0;
+    width: 30px;
+    height: 5px;
+    margin: 0 4px;
+  }
+
+  .slick-dots li button {
+    font-size: 0;
+    display: inline-block;
+    background: #000;
+    opacity: 0.2;
   }
 }

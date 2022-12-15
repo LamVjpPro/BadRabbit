@@ -14,7 +14,20 @@ $(document).ready(function ($) {
     slidesToScroll: 1,
     arrows: false,
     dots: false,
-    asNavFor: '.swiper-wrapper2'
+    asNavFor: '.swiper-wrapper2',
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+        }
+      }]
   });
   $('.swiper-wrapper2').slick({
     slidesToShow: 1,
