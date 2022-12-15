@@ -56,4 +56,10 @@ $(document).ready(function ($) {
     $('.wrapper-menu-mb').removeClass('active_mb');
     $(this).removeClass('active');
   })
+  $('.header-search-box a img').click(function () {
+    $('.header-search-box').addClass('active');
+  })
+  $('.header-wrap-search button.btn-close').click(function () {
+    $('.header-search-box').removeClass('active');
+  })
 });
