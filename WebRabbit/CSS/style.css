@@ -298,27 +298,27 @@ li {
 }
 
 .section-barcode .banner img {
-  height: 17rem;
   position: relative;
-  right: 4rem;
 }
 
 i.arrow {
   display: inline-block;
-  position: relative;
-  bottom: 20px;
-  left: -2%;
   -webkit-animation: pulse 1s infinite;
   animation: pulse 2s infinite;
 }
 
-.section-barcode i.arrow svg {
-  width: 30px;
-  height: 30px;
+.section-barcode i.arrow {
+  position: absolute;
+  bottom: -1%;
+  left: 0%;
+}
+
+.section-barcode .banner {
+  position: relative;
 }
 
 .section-bg-scroll {
-  background-image: url(https://file.hstatic.net/200000377411/file/banner1_7c09d7ad1c714336bf9487123a68a29f.jpg);
+  background-image: url(../Image/background-img/background-img1.png);
   background-attachment: fixed, scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -367,7 +367,9 @@ i.arrow {
 }
 
 .section-barcode {
-  padding-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 
 .section-banner {
@@ -381,7 +383,7 @@ i.arrow {
 }
 
 .section-bg-scroll-two {
-  background-image: url(https://file.hstatic.net/200000377411/file/thiet_ke_chua_co_ten__2__764f826266cf416ebf530c195e7f3fac.png);
+  background-image: url(../Image/background-img/background-img2.png);
   padding: 100px 0;
   background-attachment: fixed, scroll;
   background-repeat: no-repeat;
@@ -554,27 +556,29 @@ body.open-menu-mb .wrapper-menu-mb {
   left: 5rem;
 }
 
-.section-collection-1 .slick-prev.slick-arrow {
-  position: relative;
-  top: 655px;
-  left: 1%;
-  border: none;
-  background: transparent;
+@media (min-width: 991px) {
+  .section-collection-1 .slick-prev.slick-arrow {
+    position: relative;
+    top: 655px;
+    left: 1%;
+    border: none;
+    background: transparent;
+  }
+  .section-collection-2 .slick-prev.slick-arrow {
+    position: relative;
+    top: 655px;
+    left: 1%;
+    border: none;
+    background: transparent;
+  }
 }
+
 .section-collection-2 .slick-next.slick-arrow {
   position: relative;
   border: none;
   background: transparent;
   top: -1rem;
   left: 5rem;
-}
-
-.section-collection-2 .slick-prev.slick-arrow {
-  position: relative;
-  top: 656px;
-  left: 1%;
-  border: none;
-  background: transparent;
 }
 
 .swiper-container {
